@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bgd"
+    tools:context=".adminlogin">
+
+
+    <EditText
+        android:id="@+id/adminid"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/edit_round"
+        android:drawableStart="@drawable/ic_person_white_24dp"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:paddingLeft="5dp"
+        android:hint="Enter Admin Id"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adminpswd"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_round"
+        android:drawableStart="@drawable/ic_lock_white_24dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="5dp"
+        android:hint="Enter Admin Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminid"
+        />
+
+    <Button
+        android:id="@+id/adminlogbtn"
+        android:layout_width="148dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_round2"
+        android:text="LOGIN ADMIN"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminpswd" />
+
+</android.support.constraint.ConstraintLayout>

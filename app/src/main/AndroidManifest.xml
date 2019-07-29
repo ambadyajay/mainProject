@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eshopiee.project.mainproject">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".restaurant_common"></activity>
+        <activity android:name=".shoe_common" />
+        <activity android:name=".Pharmacy_common" />
+        <activity android:name=".Edit_prof" />
+        <activity android:name=".shoe_data" />
+        <activity android:name=".shoe_admin" />
+        <activity android:name=".grocery_data" />
+        <activity android:name=".grocery_admin" />
+        <activity android:name=".pharmacy_data" />
+        <activity android:name=".fashion_admin" />
+        <activity android:name=".fashion_data" />
+        <activity android:name=".Restaurant_data" />
+        <activity android:name=".pharmacy_admin" />
+        <activity android:name=".Fur_Admin" />
+        <activity android:name=".Res_Admin" />
+        <activity android:name=".admin_list_category" />
+        <activity android:name=".ArActivity" />
+        <activity android:name=".Fashioncommon" />
+        <activity android:name=".furniturecommon" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".StoreLoc"
+            android:label="@string/title_activity_store_loc" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".grocerycommon" />
+        <activity android:name=".adminlogin" />
+        <activity android:name=".fashion" />
+        <activity android:name=".shoe" />
+        <activity android:name=".grocery" />
+        <activity android:name=".furniture" />
+        <activity android:name=".pharmacy" />
+        <activity
+            android:name=".restaurant"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".signupActivity" />
+        <activity android:name=".loginActivity" />
+        <activity android:name=".homescreen" />
+        <activity android:name=".Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admindata" />
+        <activity android:name=".funiture_data" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+    </application>
+
+</manifest>

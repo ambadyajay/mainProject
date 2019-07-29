@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E-SHOPPIE</string>
+    <string name="checkbox">checkbox</string>
+    <string name="name">name</string>
+    <string name="password">password</string>
+    <string name="title_activity_storeloc">Map</string>
+    <string name="title_activity_store_loc">Map</string>
+</resources>

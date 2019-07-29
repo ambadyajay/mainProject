@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".grocerycommon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="106dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gcimg"
+                    android:layout_width="151dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/grocery_icon" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gcname"
+                        android:layout_width="216dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="166dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/hmd"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gccontact"
+                        android:layout_width="217dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="164dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:fontFamily="@font/nasa"
+                        android:padding="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="RK Pillai Road Kuzhivalipady"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+
+
+                    </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/callbtn"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/edit_round2"
+                android:src="@drawable/ic_local_phone_white_24dp" />
+
+
+            <ImageButton
+                android:id="@+id/directionbtn"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/edit_round2"
+                android:src="@drawable/ic_directions_black_24dp" />
+
+
+        </LinearLayout>
+
+        //item card view begins
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Sugar"
+                       android:textColor="@color/black"
+                       android:fontFamily="@font/nasa"
+                       android:textAlignment="center"
+                       android:textSize="20dp"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 40/kg"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tea Powder"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 10/gm"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rice"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 45/kg"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            //second row
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wheat"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 50/kg"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coffe Powder"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 10/gm"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Palm Oil"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 83/kg"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Washing Powder"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 30/kg"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nasa"
+                        android:text="Chilly Powder"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 23/kg"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turmeric powder"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 32/kg"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mustard"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 19/gm"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Milk Powder"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 320/kg"
+                        android:textColor="@color/red"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                app:cardBackgroundColor="@color/ash"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bread"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nasa"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 40/kg"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

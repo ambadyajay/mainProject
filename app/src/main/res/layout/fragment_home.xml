@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".homescreen">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/restaurantcard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/restaurant"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@color/deeppurple"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_restaurant_menu_white_24dp" />
+
+                <TextView
+                    android:id="@+id/restaurant_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="RESTAURANT"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pharmacycard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="125dp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/pharmacy"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@color/green"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_local_pharmacy_white_24dp" />
+
+                <TextView
+                    android:id="@+id/pharmacy_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="PHARMACY"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/grocerycard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/grocery"
+                    android:layout_width="65dp"
+                    android:src="@drawable/ic_local_grocery_store_white_24dp"
+                    android:layout_height="65dp"
+                    android:padding="10dp"
+                    android:background="@color/yello"/>
+                <TextView
+                    android:id="@+id/grocery_txt"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="GROCERY"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/furniturecard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/book"
+                    android:layout_width="65dp"
+                    android:src="@drawable/ic_furniture"
+                    android:layout_height="65dp"
+                    android:padding="10dp"
+                    android:background="@color/pinkaccent"/>
+                <TextView
+                    android:id="@+id/book_txt"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="FURNITURE"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fashioncard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/fashion"
+                    android:layout_width="65dp"
+                    android:src="@drawable/ic_fashion"
+                    android:layout_height="65dp"
+                    android:padding="10dp"
+                    android:background="@color/orange1"/>
+                <TextView
+                    android:id="@+id/fashion_txt"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="FASHION"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/shoecard"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/shoe"
+                    android:layout_width="65dp"
+                    android:src="@drawable/ic_trail_running_shoe"
+                    android:layout_height="65dp"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/shoe_txt"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="SHOES"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

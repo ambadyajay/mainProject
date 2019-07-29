@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="143dp"
+            android:layout_height="137dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginRight="127dp"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/user_id_value"
+            android:layout_width="297dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/app_logo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/ptextround"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="User Email "
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/user_name_value"
+            android:layout_width="297dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/user_id_value"
+            android:layout_alignStart="@+id/user_id_value"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:background="@drawable/ptextround"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="User Email "
+            android:paddingLeft="5dp"
+            android:text="UserName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/user_phone_value"
+            android:layout_width="297dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/user_name_value"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/ptextround"
+            android:drawableStart="@drawable/ic_local_phone_black_24dp"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:hint="User Contact"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_phone_value"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:background="@drawable/logout_round"
+            android:gravity="center"
+            android:text="LOG OUT"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <!-- TODO: Update blank fragment layout -->
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/edit_art"
+        android:layout_margin="16dp"
+        />
+</android.support.design.widget.CoordinatorLayout>
+

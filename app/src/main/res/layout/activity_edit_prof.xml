@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Edit_prof">
+
+
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/edit_round2"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter UserID"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/user_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/edit_round2"
+        android:ems="10"
+        android:hint="Enter User Name"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/user_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_name_value"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/edit_round2"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter UserContact"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_contact"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/logout_round"
+        android:layout_marginEnd="168dp"
+        android:text="DONE" />
+</RelativeLayout>
